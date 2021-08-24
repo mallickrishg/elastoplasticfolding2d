@@ -1,0 +1,5 @@
+# input files have the following format
+G nu mu_layers mu_detachment Cohesion Sxx_init Sxz_init Szz_init tectoniclambda totalslip(km) nslips
+
+#output .dat file formats - the last column includes layerid (0 - fault, 1-n - layer number)
+segx1 segz1 segx2 segz2 slip deepslip tau tau_yield incrementalslip layerid

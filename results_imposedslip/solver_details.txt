@@ -1,0 +1,24 @@
+#details about running the solver
+
+# imposed slip experiments (fault_smooth_x_x_layers)
+fault - 500,100,5 ( lower logistic value = increasing smoothness)
+5:20 layers
+
+-----------------------------------------------------------------------------------------------
+# model runs
+15-30 - fault_smooth_500 5-20 layers
+31-44 - fault_smooth_100 5-18 layers
+45-58 - fault_smooth_10 5-18 layers
+
+59-73 - fault_smooth_500 - 10 layers - vary G=[1,3,5,10,30] GPa and mu_l=[0.01,0.1,0.4]
+
+# testing models with very low G
+74-85 - fault_smooth_500 - 7 layers - vary G=[0.01,0.05,0.1,0.5].*1e9 and mu_l=[0.01,0.1,0.6]
+
+# testing high resolution mesh
+86 - fault_smooth_500 - 20 layers - regular spatial resolution of layers, G = 10e9, mu_l = 0.01
+87 - fault_smooth_500d - 20 layers - high res mesh - same G,mu_l  
+88 - fault_smooth_500d - 30 layers - high res mesh - same G,mu_l  - interrupted
+89 - 88 repeat
+
+
